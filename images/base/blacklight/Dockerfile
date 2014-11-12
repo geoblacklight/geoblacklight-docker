@@ -1,0 +1,18 @@
+FROM geoblacklight/base-rails
+
+MAINTAINER eliotj@princeton.edu
+
+# generate new rails app
+WORKDIR /usr/src
+RUN apt-get update && apt-get -y install libsqlite3-dev unzip openjdk-7-jre
+
+# Clone geoblacklight repo and geoblacklight-schema submodule
+RUN git clone --recurse https://github.com/geoblacklight/geoblacklight.git
+
+# Install time-consuming dependencies
+WORKDIR /usr/src/geoblacklight
+RUN bundle
+RUN gem install unicorn
+
+# Remove app
+RUN rm -rf /usr/src/geoblacklight/
