@@ -5,6 +5,19 @@ FROM geoblacklight/baseimage
 
 MAINTAINER Eliot Jordan <eliot.jordan@gmail.com>
 
+RUN apt-get update && apt-get upgrade -y && \
+  apt-get -y install \
+    build-essential \
+    libcurl4-openssl-dev \
+    libreadline-dev \
+    libssl-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    libyaml-dev \
+    zlib1g-dev \
+    software-properties-common \
+    python-software-properties
+
 RUN curl -O http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz && \
       tar -zxvf ruby-2.1.2.tar.gz && \
       cd ruby-2.1.2 && \
