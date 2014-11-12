@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER Eliot Jordan eliotj@princeton.edu
+MAINTAINER Eliot Jordan <eliot.jordan@gmail.com>
 
 RUN apt-get update && apt-get upgrade -y && \
     apt-get -y install \

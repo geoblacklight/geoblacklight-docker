@@ -1,6 +1,6 @@
 FROM geoblacklight/base-blacklight
 
-MAINTAINER eliotj@princeton.edu
+MAINTAINER Eliot Jordan <eliot.jordan@gmail.com>
 
 WORKDIR /usr/src
 

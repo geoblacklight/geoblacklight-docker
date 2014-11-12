@@ -1,7 +1,7 @@
 FROM geoblacklight/baseimage
 
-# Borrowed from quirky/rails and quirky/ruby with some minor tweaks.
-# MAINTAINER Micah Martin <micahlmartin@gmail.com>
+# Adapted from quirky/rails and quirky/ruby with some minor tweaks.
+# Micah Martin <micahlmartin@gmail.com>
 
 MAINTAINER Eliot Jordan <eliot.jordan@gmail.com>
 

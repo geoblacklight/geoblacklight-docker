@@ -1,6 +1,6 @@
 FROM geoblacklight/base-rails
 
-MAINTAINER eliotj@princeton.edu
+MAINTAINER Eliot Jordan <eliot.jordan@gmail.com>
 
 # generate new rails app
 WORKDIR /usr/src
