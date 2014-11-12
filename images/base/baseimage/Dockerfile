@@ -7,7 +7,7 @@ RUN apt-get update && apt-get upgrade -y && \
         unzip \
         wget \
         git \
-        curl \
+        curl
 
 USER root
 CMD /bin/bash
