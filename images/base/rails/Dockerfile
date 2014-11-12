@@ -54,5 +54,4 @@ RUN apt-get install postgresql-client -y
 # Mysql client
 RUN apt-get install mysql-client libmysqlclient-dev -y
 
-ENTRYPOINT ["/sbin/my_init", "--"]
 CMD ["/bin/bash"]
