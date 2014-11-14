@@ -1,19 +1,24 @@
-FROM geoblacklight/base-blacklight
+FROM geoblacklight/base-rails
 
 MAINTAINER Eliot Jordan <eliot.jordan@gmail.com>
+
+# Install needed database libs
+RUN apt-get update && apt-get -y install libsqlite3-dev libpq-dev
 
 WORKDIR /usr/src
 
 #  Bootstrap a new GeoBlacklight Rails application
-RUN rails new rails-app -m https://raw.githubusercontent.com/geoblacklight/geoblacklight/master/template.rb
+RUN rails new geoblacklight -m https://raw.githubusercontent.com/geoblacklight/geoblacklight/master/template.rb
 
-WORKDIR /usr/src/rails-app
+WORKDIR /usr/src/geoblacklight
+
+RUN bundle
 
 # Install unicorn
 RUN gem install unicorn
 
 # Setup Unicorn
-ADD  unicorn.rb /usr/src/rails-app/config/unicorn.rb
+ADD  unicorn.rb /usr/src/geoblacklight/config/unicorn.rb
 RUN mkdir /var/www && mkdir /var/www/gbl && mkdir /var/www/gbl/pids && mkdir /var/www/gbl/log/
 
 # Add default env variable referencing our solr container
