@@ -21,7 +21,7 @@ RUN mkdir /var/www && mkdir /var/www/gbl && mkdir /var/www/gbl/pids && mkdir /va
 ENV SOLR_URL http://solr:8983/solr
 
 # Add script that loads in test data
-ADD load_and_run.sh /usr/src/rails-app/load_and_run.sh
+ADD load_test_data.sh /usr/src/geoblacklight/load_test_data.sh
 
 EXPOSE 3000
 
