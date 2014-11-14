@@ -4,7 +4,7 @@ MAINTAINER Eliot Jordan <eliot.jordan@gmail.com>
 
 # generate new rails app
 WORKDIR /usr/src
-RUN apt-get update && apt-get -y install libsqlite3-dev
+RUN apt-get update && apt-get -y install libsqlite3-dev libpq-dev
 
 # Clone geoblacklight repo and geoblacklight-schema submodule
 RUN git clone --recurse https://github.com/geoblacklight/geoblacklight.git
