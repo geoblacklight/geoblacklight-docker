@@ -1,6 +1,6 @@
 
 
-## Docker images for building GeoBlacklight
+## Docker Images for Building GeoBlacklight
 
 
 #### Pull Images ###
