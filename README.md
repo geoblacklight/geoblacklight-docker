@@ -1,6 +1,6 @@
 
 
-## Docker images for building GeoBlacklight application stack
+## Docker images for building GeoBlacklight stack
 
 
 ### Docker ~> 1.3
