@@ -32,7 +32,7 @@ RUN curl -O http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz && \
 RUN gem install bundler --version=1.6.2
 
 # Rails
-RUN gem install --no-ri --no-rdoc rails --version=4.0.0
+RUN gem install --no-ri --no-rdoc rails --version=4.2.0
 
 # scss-lint
 RUN gem install scss-lint
