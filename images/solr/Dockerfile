@@ -15,8 +15,8 @@ RUN \
 
 WORKDIR /opt
 
-RUN git clone --recurse https://github.com/geoblacklight/geoblacklight.git
-RUN cp -r geoblacklight/schema/conf/* /opt/solr/example/solr/collection1/conf
+RUN git clone https://github.com/geoblacklight/geoblacklight-schema.git
+RUN cp -r geoblacklight-schema/conf/* /opt/solr/example/solr/collection1/conf
 
 WORKDIR /opt/solr/example
 
