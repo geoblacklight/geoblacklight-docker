@@ -15,8 +15,24 @@ RUN apt-get update && apt-get upgrade -y && \
     libxslt1-dev \
     libyaml-dev \
     zlib1g-dev \
+    git-core \
     software-properties-common \
-    python-software-properties
+    python-software-properties \
+    libgdbm-dev \
+    libncurses5-dev \
+    automake \
+    libtool \
+    bison \
+    libffi-dev
+
+# Install Databases
+RUN apt-get -y install \
+  libpq-dev \
+  postgresql-client \
+  mysql-client \
+  libmysqlclient-dev \
+  libsqlite3-dev \
+  sqlite3
 
 RUN curl -O http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz && \
       tar -zxvf ruby-2.1.2.tar.gz && \
@@ -26,10 +42,10 @@ RUN curl -O http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz && \
       make install && \
       cd .. && \
       rm -r ruby-2.1.2 ruby-2.1.2.tar.gz && \
-      echo 'gem: --no-document' > /usr/local/etc/gemrcdoc
+      echo 'gem: --no-ri --no-rdoc' > /usr/local/etc/gemrcdoc
 
 # Bundler
-RUN gem install bundler --version=1.6.2
+RUN gem install bundler 
 
 # Rails
 RUN gem install --no-ri --no-rdoc rails --version=4.2.0
@@ -43,15 +59,8 @@ RUN apt-add-repository ppa:chris-lea/node.js -y && \
     apt-get install nodejs -y
 
 # Nodejs tools
-RUN npm install -g bower
-RUN npm install -g grunt-cli
-RUN npm install -g gulp
-
-# PostgreSQL client
-RUN apt-get install libpq-dev -y
-RUN apt-get install postgresql-client -y
-
-# Mysql client
-RUN apt-get install mysql-client libmysqlclient-dev -y
+RUN npm install -g bower && \
+  npm install -g grunt-cli && \
+  npm install -g gulp
 
 CMD ["/bin/bash"]
