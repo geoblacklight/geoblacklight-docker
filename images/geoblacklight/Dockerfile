@@ -2,9 +2,6 @@ FROM geoblacklight/base-rails
 
 MAINTAINER Eliot Jordan <eliot.jordan@gmail.com>
 
-# Install needed database libs
-RUN apt-get update && apt-get -y install libsqlite3-dev libpq-dev
-
 WORKDIR /usr/src
 
 #  Bootstrap a new GeoBlacklight Rails application
@@ -12,7 +9,7 @@ RUN rails new geoblacklight -m https://raw.githubusercontent.com/geoblacklight/g
 
 WORKDIR /usr/src/geoblacklight
 
-RUN bundle
+RUN bundle install
 
 # Install unicorn
 RUN gem install unicorn
@@ -31,4 +28,3 @@ ADD load_test_data.sh /usr/src/geoblacklight/load_test_data.sh
 EXPOSE 3000
 
 CMD unicorn_rails -c config/unicorn.rb
-
