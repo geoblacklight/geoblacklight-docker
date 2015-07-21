@@ -1,27 +1,26 @@
-FROM geoblacklight/baseimage
+FROM makuk66/docker-solr:5.2
 
-# Adapted from pataquets/solr
 MAINTAINER Eliot Jordan <eliot.jordan@gmail.com>
 
+USER root
 
-ENV SOLR_VERSION 4.7.2
-ENV SOLR solr-$SOLR_VERSION
+ENV PATH /opt/solr/bin:${PATH}
+ENV SCHEMA_VERSION 0.3.2
+ENV SOLR_HOME /var/solr/data/
+ENV GEO_CORE ${SOLR_HOME}geoblacklight/
 
-RUN \
- wget http://apache.mirrors.tds.net/lucene/solr/$SOLR_VERSION/$SOLR.tgz && \
- tar xvf $SOLR.tgz && \
- rm -v $SOLR.tgz && \
- mv $SOLR /opt/solr
+RUN mkdir -p ${GEO_CORE}
 
-WORKDIR /opt
+ADD solr.xml ${SOLR_HOME}
+ADD core.properties ${GEO_CORE}
 
-RUN git clone https://github.com/geoblacklight/geoblacklight-schema.git
-RUN cp -r geoblacklight-schema/conf/* /opt/solr/example/solr/collection1/conf
+RUN curl -L https://github.com/geoblacklight/geoblacklight-schema/archive/v${SCHEMA_VERSION}.tar.gz | \
+    tar xz -C /tmp && \
+    mv /tmp/geoblacklight-schema-${SCHEMA_VERSION}/conf ${GEO_CORE} && \
+    chown -R ${SOLR_USER}:${SOLR_USER} /var/solr/
 
-WORKDIR /opt/solr/example
+VOLUME ["/var/solr"]
 
-EXPOSE 8983
+USER ${SOLR_USER}
 
-ENTRYPOINT [ "java", "-jar", "start.jar" ]
-
-
+CMD ["solr", "start", "-f"]
