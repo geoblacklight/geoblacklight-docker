@@ -1,0 +1,9 @@
+geoblacklight:
+  image: geoblacklight/geoblacklight
+  ports:
+   - "3000:3000"
+  links:
+   - solr
+  command: ["sh", "-c", "/usr/src/geoblacklight/load_and_start.sh"]
+solr:
+  image: geoblacklight/solr

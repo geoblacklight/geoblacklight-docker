@@ -2,28 +2,21 @@
 
 ## Docker Images for Building GeoBlacklight
 
+The easiest way to to begin is to use the [docker-compose](https://docs.docker.com/compose/#compose-documentation) tool.
 
-#### Pull Images ###
+#### Requirements:
+
+1. docker ~> 1.8
+2. docker-compose ~> 1.2
+
+#### Pull Images ####
+
 	$ docker pull geoblacklight/solr
 	$ docker pull geoblacklight/geoblacklight
 
-#### Docker ~> 1.3
+#### Run application
 
-	$ docker run --name app_solr -d -p 8983 geoblacklight/solr
-	$ docker run --name app_gbl  -d -p 3000:3000 --link app_solr:solr geoblacklight/geoblacklight
+	$ cd compose/basic/
+	$ docker-compose up
 
-To load test data:
-
-	$ docker exec app_gbl rake geoblacklight:solr:seed
-
-#### Docker < 1.3
-
-Empty solr index:
-
-	$ docker run --name app_solr -d -p 8983 geoblacklight/solr
-	$ docker run --name app_gbl  -d -p 3000:3000 --link app_solr:solr geoblacklight/geoblacklight
-
-Solr with test data:
-
-	$ docker run --name app_solr -d -p 8983 geoblacklight/solr
-	$ docker run --name app_gbl  -d -p 3000:3000 --link app_solr:solr geoblacklight/geoblacklight /bin/bash load_test_data.sh
+#### http://{your_docker_host_ip}:3000/
