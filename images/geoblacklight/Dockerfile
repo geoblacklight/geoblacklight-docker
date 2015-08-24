@@ -20,7 +20,7 @@ RUN mkdir /var/www && mkdir /var/www/gbl && mkdir /var/www/gbl/pids && mkdir /va
 
 # Add default env variable referencing our solr container
 # Depends on --link my_solr_container:solr
-ENV SOLR_URL http://solr:8983/solr
+ENV SOLR_URL http://solr:8983/solr/geoblacklight
 
 # Add script that loads in test data
 ADD load_test_data.sh /usr/src/geoblacklight/load_test_data.sh
