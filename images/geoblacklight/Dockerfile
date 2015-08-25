@@ -15,6 +15,9 @@ RUN rails new geoblacklight -m https://raw.githubusercontent.com/geoblacklight/g
 
 WORKDIR /usr/src/geoblacklight
 
+# Add postgres gem
+RUN echo "\ngem 'pg'" >> Gemfile
+
 RUN bundle install
 
 # Install unicorn
@@ -28,19 +31,11 @@ RUN mkdir /var/www && mkdir /var/www/gbl && mkdir /var/www/gbl/pids && mkdir /va
 # Depends on --link my_solr_container:solr
 ENV SOLR_URL http://solr:8983/solr/geoblacklight
 
-# Add script that seeds solr with data
-ADD load_and_start.sh /usr/src/geoblacklight/load_and_start.sh
-
-# Add test data
-RUN cd /tmp && \
-	git clone --depth=1 https://github.com/geoblacklight/geoblacklight.git && \ 
-	mkdir /usr/src/geoblacklight/spec && \
-	cp -R /tmp/geoblacklight/spec/fixtures/ /usr/src/geoblacklight/spec/. && \
-	rm -rf geoblacklight/  && \
-	cd -
+# Add start-up script
+ADD start.sh /usr/src/geoblacklight/start.sh
 
 VOLUME ["/usr/src/geoblacklight/tmp"]
 
 EXPOSE 3000
 
-CMD unicorn_rails -c config/unicorn.rb
+CMD ["sh", "-c", "/usr/src/geoblacklight/start.sh"]

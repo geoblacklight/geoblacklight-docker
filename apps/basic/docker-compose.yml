@@ -1,0 +1,14 @@
+geoblacklight:
+  image: geoblacklight/geoblacklight
+  ports:
+    - "80:3000"
+  environment:
+    RAILS_ENV: development
+    SOLR_URL: http://solr:8983/solr/geoblacklight
+  links:
+    - solr
+
+solr:
+  image: geoblacklight/solr
+  volumes:
+    - ./solr/start.sh:/opt/solr-5.2.1/start.sh

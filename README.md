@@ -1,22 +1,63 @@
 
 
-## Docker Images for Building GeoBlacklight
+# Docker Images for Building GeoBlacklight
 
-The easiest way to to begin is to use the [docker-compose](https://docs.docker.com/compose/#compose-documentation) tool.
+Test the application using the [docker-compose](https://docs.docker.com/compose/#compose-documentation) tool.
 
-#### Requirements:
+#### Requirements
 
-1. docker ~> 1.8
-2. docker-compose ~> 1.2
+```
+docker toolbox ~> 1.8
+```
 
-#### Pull Images ####
+or
+
+```
+docker ~> 1.8
+docker-compose ~> 1.2
+```
+
+## Basic
+
+#### Pull Images
 
 	$ docker pull geoblacklight/solr
 	$ docker pull geoblacklight/geoblacklight
 
-#### Run application
+#### Run with Compose
 
-	$ cd compose/basic/
-	$ docker-compose up
+	$ docker-compose -f apps/basic/docker-compose.yml up -d
 
-#### http://{your_docker_host_ip}:3000/
+####  GeoBlacklight
+```
+http://{your_docker_host_ip}/
+```
+
+## Full Stack
+
+#### Pull or Build Images
+	
+	$ ./scripts/pull.sh
+
+	or
+
+	$ ./scripts/build.sh
+
+#### Run with Compose
+
+	$ docker-compose -f apps/full/docker-compose.yml up -d
+	
+	  Wait 45 - 60 seconds for components to load. 
+	
+####  GeoBlacklight
+```
+http://{host_ip}/
+```
+
+#### Other Endpoints
+
+- ```http://{host_ip}/geoserver```
+ 	- username: admin
+    - password: geoserver
+- ```http://{host_ip}/solr```
+- ```http://{host_ip}/iiif```	
