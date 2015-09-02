@@ -1,29 +1,63 @@
 
 
-## Docker Images for Building GeoBlacklight
+# Docker Images for Building GeoBlacklight
 
+Test the application using the [docker-compose](https://docs.docker.com/compose/#compose-documentation) tool.
 
-#### Pull Images ###
+#### Requirements
+
+```
+docker toolbox ~> 1.8
+```
+
+or
+
+```
+docker ~> 1.8
+docker-compose ~> 1.2
+```
+
+## Basic
+
+#### Pull Images
+
 	$ docker pull geoblacklight/solr
 	$ docker pull geoblacklight/geoblacklight
 
-#### Docker ~> 1.3
+#### Run with Compose
 
-	$ docker run --name app_solr -d -p 8983 geoblacklight/solr
-	$ docker run --name app_gbl  -d -p 3000:3000 --link app_solr:solr geoblacklight/geoblacklight
+	$ docker-compose -f apps/basic/docker-compose.yml up -d
 
-To load test data:
+####  GeoBlacklight
+```
+http://{your_docker_host_ip}/
+```
 
-	$ docker exec app_gbl rake geoblacklight:solr:seed
+## Full Stack
 
-#### Docker < 1.3
+#### Pull or Build Images
+	
+	$ ./scripts/pull.sh
 
-Empty solr index:
+	or
 
-	$ docker run --name app_solr -d -p 8983 geoblacklight/solr
-	$ docker run --name app_gbl  -d -p 3000:3000 --link app_solr:solr geoblacklight/geoblacklight
+	$ ./scripts/build.sh
 
-Solr with test data:
+#### Run with Compose
 
-	$ docker run --name app_solr -d -p 8983 geoblacklight/solr
-	$ docker run --name app_gbl  -d -p 3000:3000 --link app_solr:solr geoblacklight/geoblacklight /bin/bash load_test_data.sh
+	$ docker-compose -f apps/full/docker-compose.yml up -d
+	
+	  Wait 45 - 60 seconds for components to load. 
+	
+####  GeoBlacklight
+```
+http://{host_ip}/
+```
+
+#### Other Endpoints
+
+- ```http://{host_ip}/geoserver```
+ 	- username: admin
+    - password: geoserver
+- ```http://{host_ip}/solr```
+- ```http://{host_ip}/iiif```	

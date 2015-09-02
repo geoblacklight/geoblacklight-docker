@@ -6,6 +6,7 @@ USER root
 
 ENV PATH /opt/solr/bin:${PATH}
 ENV SCHEMA_VERSION 0.3.2
+ENV GBL_VERSION 0.10.2
 ENV SOLR_HOME /var/solr/data/
 ENV GEO_CORE ${SOLR_HOME}geoblacklight/
 
@@ -16,11 +17,11 @@ ADD core.properties ${GEO_CORE}
 
 RUN curl -L https://github.com/geoblacklight/geoblacklight-schema/archive/v${SCHEMA_VERSION}.tar.gz | \
     tar xz -C /tmp && \
-    mv /tmp/geoblacklight-schema-${SCHEMA_VERSION}/conf ${GEO_CORE} && \
-    chown -R ${SOLR_USER}:${SOLR_USER} /var/solr/
+    mv /tmp/geoblacklight-schema-${SCHEMA_VERSION}/conf ${GEO_CORE}
+
+# Add start-up script
+ADD ./start.sh /opt/solr-5.2.1/start.sh
 
 VOLUME ["/var/solr"]
 
-USER ${SOLR_USER}
-
-CMD ["solr", "start", "-f"]
+CMD ["sh", "-c", "/opt/solr-5.2.1/start.sh"]
