@@ -35,14 +35,6 @@ http://{your_docker_host_ip}/
 
 ## Full Stack
 
-#### Pull or Build Images
-	
-	$ ./scripts/pull.sh
-
-	or
-
-	$ ./scripts/build.sh
-
 #### Run with Compose
 
 	$ docker-compose -f apps/full/docker-compose.yml up -d

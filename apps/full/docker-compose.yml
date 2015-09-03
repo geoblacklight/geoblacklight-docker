@@ -16,14 +16,14 @@ geoblacklight:
 solr:
   image: geoblacklight/solr
   volumes:
-    - ./data/solr_documents:/opt/solr-5.2.1/solr_documents
+    - ../../data/solr_documents:/opt/solr-5.2.1/solr_documents
     - ./solr/start.sh:/opt/solr-5.2.1/start.sh
 
 geoserver:
   image: geoblacklight/geoserver
   volumes:
-    - ./data/geoserver:/usr/local/tomcat/webapps/geoserver/data
-    - ./data/images:/usr/local/tomcat/webapps/geoserver/images
+    - ./geoserver:/usr/local/tomcat/webapps/geoserver/data
+    - ../../data:/data
   links:
     - db
 
@@ -31,7 +31,7 @@ db:
   image: geoblacklight/postgres
   volumes:
     - ./postgres/initdb-postgis.sh:/docker-entrypoint-initdb.d/postgis.sh
-    - ./data/shapefiles:/root/shapefiles
+    - ../../data/shapefiles:/root/shapefiles
   environment:
     POSTGRES_USER: postgres
     POSTGRES_PASSWORD: postgres
@@ -39,7 +39,7 @@ db:
 loris:
   image: lorisimageserver/loris
   volumes:
-    - ./data/images:/usr/local/share/images
+    - ../../data/images:/usr/local/share/images
 
 nginx:
   image: nginx

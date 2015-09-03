@@ -1,0 +1,24 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "geoblacklight.box"
+  config.vm.box_url = "file://base/geoblacklight.box"
+
+  config.vm.synced_folder "../", "/home/vagrant/geoblacklight-docker"
+
+  config.vm.provision "shell", inline: <<-SHELL
+    docker-compose -f geoblacklight-docker/apps/full/docker-compose.yml up -d    
+  SHELL
+
+  config.vm.network "forwarded_port", guest: 80, host: 9000
+
+  # config.vm.provider "virtualbox" do |vb|
+  #   # Display the VirtualBox GUI when booting the machine
+  #   vb.gui = true
+  #
+  #   # Customize the amount of memory on the VM:
+  #   vb.memory = "1024"
+  # end
+end

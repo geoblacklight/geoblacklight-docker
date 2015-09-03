@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "phusion/ubuntu-14.04-amd64"
+
+  config.vm.provision "docker" do |d|
+    d.pull_images "geoblacklight/geoblacklight"
+    d.pull_images "geoblacklight/solr"
+    d.pull_images "geoblacklight/postgres"
+    d.pull_images "geoblacklight/geoserver"
+    d.pull_images "lorisimageserver/loris"
+    d.pull_images "nginx"
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+     sudo apt-get update
+     sudo apt-get install -y python-pip git
+     sudo pip install -U docker-compose
+     sudo apt-get clean
+     sudo dd if=/dev/zero of=/EMPTY bs=1M
+     sudo rm -f /EMPTY
+     cat /dev/null > ~/.bash_history && history -c && exit
+  SHELL
+end
