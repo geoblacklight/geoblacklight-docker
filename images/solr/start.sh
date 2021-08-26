@@ -1,1 +1,0 @@
-solr start -f
