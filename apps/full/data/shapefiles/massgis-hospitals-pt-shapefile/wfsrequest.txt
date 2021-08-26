@@ -1,1 +1,0 @@
-http://giswebservices.massgis.state.ma.us/geoserver/wfs?outputformat=SHAPE-ZIP&request=GetFeature&service=wfs&srsName=EPSG%3A4326&typeName=massgis%3AGISDATA.HOSPITALS_PT&version=2.0.0
