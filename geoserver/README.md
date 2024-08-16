@@ -5,7 +5,7 @@
     ```
       docker run -it -p8080:8080 \
         --mount type=bind,src=./geoserver_data,target=/opt/geoserver_data \
-            docker.osgeo.org/geoserver:2.25.3
+            ghcr.io/geoblacklight/geoserver:latest
     ```
 1. Open localhost:8080/geoserver and login:
   - user: admin
