@@ -1,4 +1,4 @@
-FROM solr:8.9
+FROM solr:9.6.1
 
 ENV WEBAPP_BASE_PATH "/opt/solr/server/solr-webapp/webapp/WEB-INF/lib"
 
