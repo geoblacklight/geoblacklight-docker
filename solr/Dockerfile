@@ -1,4 +1,5 @@
-FROM solr:9.6.1
+ARG VERSION=9.6.1
+FROM solr:$VERSION
 
 ENV WEBAPP_BASE_PATH "/opt/solr/server/solr-webapp/webapp/WEB-INF/lib"
 
