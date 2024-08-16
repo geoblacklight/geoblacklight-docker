@@ -45,7 +45,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          tags: ghcr.io/geoblacklight/geoserver:${{ steps.package_version.outputs.version }}
+          tags: ghcr.io/geoblacklight/geoserver:${{ steps.package_version.outputs.version }}-dev
 
         # On push to main
       - name: Build and push GeoServer Docker image with version and latest tags
@@ -94,7 +94,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          tags: ghcr.io/geoblacklight/solr:${{ steps.package_version.outputs.version }}
+          tags: ghcr.io/geoblacklight/solr:${{ steps.package_version.outputs.version }}-dev
 
         # On push to main
       - name: Build and push Solr Docker image with version and latest tags
