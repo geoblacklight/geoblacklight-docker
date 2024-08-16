@@ -1,0 +1,6 @@
+[ERROR] - ESRITranslator - Error [InvalidForOne]: fragment[MD_MaintenanceInformation] clause:  for-one clause: em:maintenanceAndUpdateFrequency(v:Subject, v:Code), v:CodeList = gmxRes:MD_MaintenanceFrequencyCode CallTemplateNode:58022302
+
+[ERROR] - ESRITranslator - Error [InvalidForSome]: fragment[MD_FeatureCatalogueDescription] clause:  for-some clause: em:featureCatalogueCitation(v:Resource, v:Object) <catCitation>
+
+[ERROR] - ESRITranslator - Error [InvalidForOne]: fragment[MD_Distributor] clause:  for-one clause: em:distributorContact(v:Subject, v:Object) <distorCont>
+
