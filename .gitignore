@@ -1,2 +1,6 @@
 .tool-versions
 .DS_Store
+
+# GeoServer
+/geoserver/geoserver_data/logs/*.log
+/geoserver/geoserver_data/gwc/tmp
