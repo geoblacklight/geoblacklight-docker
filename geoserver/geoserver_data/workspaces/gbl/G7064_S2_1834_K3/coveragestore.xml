@@ -1,0 +1,13 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl--58401678:1916b76ad33:-7ffa</id>
+  <name>G7064_S2_1834_K3</name>
+  <type>GeoTIFF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--40ad9fd1:1915be3e0ec:-7fff</id>
+  </workspace>
+  <__default>false</__default>
+  <dateCreated>2024-08-19 16:46:50.851 UTC</dateCreated>
+  <disableOnConnFailure>false</disableOnConnFailure>
+  <url>file:data/G7064_S2_1834_K3/G7064_S2_1834_K3.tif</url>
+</coverageStore>

@@ -1,16 +1,16 @@
 <featureType>
-  <id>FeatureTypeInfoImpl--40ad9fd1:1915be3e0ec:-7ffd</id>
-  <name>nyu_2451_34564</name>
-  <nativeName>nyu_2451_34564</nativeName>
+  <id>FeatureTypeInfoImpl--58401678:1916b76ad33:-7ff4</id>
+  <name>cugir-007950</name>
+  <nativeName>cugir-007950</nativeName>
   <namespace>
     <id>NamespaceInfoImpl--40ad9fd1:1915be3e0ec:-7ffe</id>
   </namespace>
-  <title>nyu_2451_34564</title>
+  <title>cugir-007950</title>
   <keywords>
     <string>features</string>
-    <string>nyu_2451_34564</string>
+    <string>cugir-007950</string>
   </keywords>
-  <nativeCRS class="projected">PROJCS[&quot;NAD83 / New York Long Island (ftUS)&quot;, 
+  <nativeCRS class="projected">PROJCS[&quot;NAD83 / UTM zone 18N&quot;, 
   GEOGCS[&quot;NAD83&quot;, 
     DATUM[&quot;North American Datum 1983&quot;, 
       SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], 
@@ -21,40 +21,40 @@
     AXIS[&quot;Geodetic longitude&quot;, EAST], 
     AXIS[&quot;Geodetic latitude&quot;, NORTH], 
     AUTHORITY[&quot;EPSG&quot;,&quot;4269&quot;]], 
-  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;], 
-  PARAMETER[&quot;central_meridian&quot;, -74.0], 
-  PARAMETER[&quot;latitude_of_origin&quot;, 40.166666666666664], 
-  PARAMETER[&quot;standard_parallel_1&quot;, 41.03333333333333], 
-  PARAMETER[&quot;false_easting&quot;, 984250.0], 
+  PROJECTION[&quot;Transverse_Mercator&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9807&quot;]], 
+  PARAMETER[&quot;central_meridian&quot;, -75.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 0.0], 
+  PARAMETER[&quot;scale_factor&quot;, 0.9996], 
+  PARAMETER[&quot;false_easting&quot;, 500000.0], 
   PARAMETER[&quot;false_northing&quot;, 0.0], 
-  PARAMETER[&quot;scale_factor&quot;, 1.0], 
-  PARAMETER[&quot;standard_parallel_2&quot;, 40.666666666666664], 
-  UNIT[&quot;ft_survey_us&quot;, 0.3048006096012192], 
+  UNIT[&quot;m&quot;, 1.0], 
   AXIS[&quot;Easting&quot;, EAST], 
   AXIS[&quot;Northing&quot;, NORTH], 
-  AUTHORITY[&quot;EPSG&quot;,&quot;2263&quot;]]</nativeCRS>
-  <srs>EPSG:2263</srs>
+  AUTHORITY[&quot;EPSG&quot;,&quot;26918&quot;]]</nativeCRS>
+  <srs>EPSG:26918</srs>
   <nativeBoundingBox>
-    <minx>915120.6749924421</minx>
-    <maxx>1058424.0678470284</maxx>
-    <miny>121380.10243426263</miny>
-    <maxy>265810.9264329374</maxy>
-    <crs class="projected">EPSG:2263</crs>
+    <minx>407023.40625</minx>
+    <maxx>465265.917116303</maxx>
+    <miny>4649821.732072523</miny>
+    <maxy>4696192.371672511</maxy>
+    <crs class="projected">EPSG:26918</crs>
   </nativeBoundingBox>
   <latLonBoundingBox>
-    <minx>-74.25004704107901</minx>
-    <maxx>-73.73170577656607</maxx>
-    <miny>40.49952516399667</miny>
-    <maxy>40.89626291438412</maxy>
+    <minx>-76.12998684961792</minx>
+    <maxx>-75.41940175939408</maxx>
+    <miny>41.99492083122716</miny>
+    <maxy>42.4172621581856</maxy>
     <crs>EPSG:4326</crs>
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
   <store class="dataStore">
-    <id>DataStoreInfoImpl--40ad9fd1:1915be3e0ec:-8000</id>
+    <id>DataStoreInfoImpl--58401678:1916b76ad33:-7ff5</id>
   </store>
   <serviceConfiguration>false</serviceConfiguration>
   <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
   <maxFeatures>0</maxFeatures>
   <numDecimals>0</numDecimals>
   <padWithZeros>false</padWithZeros>

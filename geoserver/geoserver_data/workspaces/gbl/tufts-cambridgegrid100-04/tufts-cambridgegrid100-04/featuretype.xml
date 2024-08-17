@@ -1,0 +1,54 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-3963d6bf:1915e835b7a:-7ffe</id>
+  <name>tufts-cambridgegrid100-04</name>
+  <nativeName>tufts-cambridgegrid100-04</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--40ad9fd1:1915be3e0ec:-7ffe</id>
+  </namespace>
+  <title>tufts-cambridgegrid100-04</title>
+  <keywords>
+    <string>features</string>
+    <string>tufts-cambridgegrid100-04</string>
+  </keywords>
+  <nativeCRS>GEOGCS[&quot;WGS 84&quot;, 
+  DATUM[&quot;World Geodetic System 1984&quot;, 
+    SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</nativeCRS>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-71.16386724197743</minx>
+    <maxx>-71.0528526991554</maxx>
+    <miny>42.347654173288426</miny>
+    <maxy>42.40824928097171</maxy>
+    <crs>EPSG:4326</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-71.16386724197743</minx>
+    <maxx>-71.0528526991554</maxx>
+    <miny>42.347654173288426</miny>
+    <maxy>42.40824928097171</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-3963d6bf:1915e835b7a:-8000</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

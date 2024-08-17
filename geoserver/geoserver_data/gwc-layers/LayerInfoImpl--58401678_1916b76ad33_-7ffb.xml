@@ -1,8 +1,8 @@
 <GeoServerTileLayer>
-  <id>LayerInfoImpl--40ad9fd1:1915be3e0ec:-7ffc</id>
+  <id>LayerInfoImpl--58401678:1916b76ad33:-7ffb</id>
   <enabled>true</enabled>
   <inMemoryCached>true</inMemoryCached>
-  <name>gbl:nyu_2451_34564</name>
+  <name>gbl:cugir-007741</name>
   <mimeFormats>
     <string>image/png</string>
     <string>image/jpeg</string>
@@ -12,10 +12,10 @@
       <gridSetName>EPSG:4326</gridSetName>
       <extent>
         <coords>
-          <double>-74.25004704107901</double>
-          <double>40.49952516399667</double>
-          <double>-73.73170577656607</double>
-          <double>40.89626291438412</double>
+          <double>-74.98929803337846</double>
+          <double>43.4485024641777</double>
+          <double>-73.85287898905031</double>
+          <double>44.67779004709617</double>
         </coords>
       </extent>
     </gridSubset>
@@ -23,10 +23,10 @@
       <gridSetName>EPSG:900913</gridSetName>
       <extent>
         <coords>
-          <double>-8265477.427989526</double>
-          <double>4938799.662503363</double>
-          <double>-8207775.942366803</double>
-          <double>4997052.487640509</double>
+          <double>-8347770.472020721</double>
+          <double>5380489.577069638</double>
+          <double>-8221264.882678334</double>
+          <double>5570937.955783148</double>
         </coords>
       </extent>
     </gridSubset>

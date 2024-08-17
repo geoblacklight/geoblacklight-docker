@@ -1,0 +1,169 @@
+<coverage>
+  <id>CoverageInfoImpl--58401678:1916b76ad33:-7ff9</id>
+  <name>G7064_S2_1834_K3</name>
+  <nativeName>G7064_S2_1834_K3</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--40ad9fd1:1915be3e0ec:-7ffe</id>
+  </namespace>
+  <title>G7064_S2_1834_K3</title>
+  <description>Generated from GeoTIFF</description>
+  <keywords>
+    <string>G7064_S2_1834_K3</string>
+    <string>WCS</string>
+    <string>GeoTIFF</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;Pulkovo 1995 / Gauss-Kruger CM 33E&quot;, 
+  GEOGCS[&quot;Pulkovo 1995&quot;, 
+    DATUM[&quot;Pulkovo 1995&quot;, 
+      SPHEROID[&quot;Krassowsky 1940&quot;, 6378245.0, 298.3, AUTHORITY[&quot;EPSG&quot;,&quot;7024&quot;]], 
+      TOWGS84[24.47, -130.89, -81.56, -0.0, 0.0, -0.13, -0.22], 
+      AUTHORITY[&quot;EPSG&quot;,&quot;6200&quot;]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Geodetic longitude&quot;, EAST], 
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;4200&quot;]], 
+  PROJECTION[&quot;Transverse_Mercator&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9807&quot;]], 
+  PARAMETER[&quot;central_meridian&quot;, 33.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 0.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;false_easting&quot;, 500000.0], 
+  PARAMETER[&quot;false_northing&quot;, 0.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;Easting&quot;, EAST], 
+  AXIS[&quot;Northing&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;2465&quot;]]</nativeCRS>
+  <srs>EPSG:2465</srs>
+  <nativeBoundingBox>
+    <minx>333494.22740079294</minx>
+    <maxx>380331.13511127525</maxx>
+    <miny>6621100.04320172</miny>
+    <maxy>6660779.82023282</maxy>
+    <crs class="projected">EPSG:2465</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>30.01089226318642</minx>
+    <maxx>30.87312421396714</maxx>
+    <miny>59.66971876011287</miny>
+    <maxy>60.04172645547843</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>REPROJECT_TO_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="dirName">G7064_S2_1834_K3_G7064_S2_1834_K3</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl--58401678:1916b76ad33:-7ffa</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <nativeFormat>GeoTIFF</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>236 200</high>
+    </range>
+    <transform>
+      <scaleX>198.46147334950135</scaleX>
+      <scaleY>-198.3988851554978</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>333593.4581374677</translateX>
+      <translateY>6660680.620790242</translateY>
+    </transform>
+    <crs>EPSG:2465</crs>
+  </grid>
+  <supportedFormats>
+    <string>GeoPackage (mosaic)</string>
+    <string>GEOTIFF</string>
+    <string>GIF</string>
+    <string>PNG</string>
+    <string>JPEG</string>
+    <string>TIFF</string>
+    <string>ArcGrid</string>
+    <string>ImageMosaic</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>nearest neighbor</string>
+    <string>bilinear</string>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <defaultInterpolationMethod>nearest neighbor</defaultInterpolationMethod>
+  <dimensions>
+    <coverageDimension>
+      <name>RED_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <unit>W.m-2.Sr-1</unit>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>GREEN_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <unit>W.m-2.Sr-1</unit>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>BLUE_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <unit>W.m-2.Sr-1</unit>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>ALPHA_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+  </dimensions>
+  <requestSRS>
+    <string>EPSG:2465</string>
+  </requestSRS>
+  <responseSRS>
+    <string>EPSG:2465</string>
+  </responseSRS>
+  <parameters>
+    <entry>
+      <string>InputTransparentColor</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>SUGGESTED_TILE_SIZE</string>
+      <string>512,512</string>
+    </entry>
+    <entry>
+      <string>Bands</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>RescalePixels</string>
+      <boolean>true</boolean>
+    </entry>
+  </parameters>
+  <nativeCoverageName>G7064_S2_1834_K3</nativeCoverageName>
+</coverage>

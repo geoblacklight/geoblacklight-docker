@@ -1,0 +1,26 @@
+<dataStore>
+  <id>DataStoreInfoImpl-3963d6bf:1915e835b7a:-8000</id>
+  <name>tufts-cambridgegrid100-04</name>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--40ad9fd1:1915be3e0ec:-7fff</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">GMT</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">https://geoblacklight.org/</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="skipScan">true</entry>
+    <entry key="url">file:data/tufts-cambridgegrid100-04/tufts-cambridgegrid100-04.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2024-08-17 04:05:52.633 UTC</dateCreated>
+  <dateModified>2024-08-17 04:05:53.606 UTC</dateModified>
+  <disableOnConnFailure>false</disableOnConnFailure>
+</dataStore>
