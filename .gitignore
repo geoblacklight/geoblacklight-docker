@@ -4,3 +4,6 @@
 # GeoServer
 /geoserver/geoserver_data/logs/*.log
 /geoserver/geoserver_data/gwc/tmp
+/geoserver/geoserver_data/gwc/*
+!/geoserver/geoserver_data/gwc/geowebcache.xml
+!/geoserver/geoserver_data/gwc/metadata.properties

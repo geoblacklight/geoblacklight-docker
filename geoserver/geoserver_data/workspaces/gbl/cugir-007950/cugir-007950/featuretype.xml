@@ -1,0 +1,65 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--58401678:1916b76ad33:-7ff4</id>
+  <name>cugir-007950</name>
+  <nativeName>cugir-007950</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--40ad9fd1:1915be3e0ec:-7ffe</id>
+  </namespace>
+  <title>cugir-007950</title>
+  <keywords>
+    <string>features</string>
+    <string>cugir-007950</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;NAD83 / UTM zone 18N&quot;, 
+  GEOGCS[&quot;NAD83&quot;, 
+    DATUM[&quot;North American Datum 1983&quot;, 
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY[&quot;EPSG&quot;,&quot;6269&quot;]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Geodetic longitude&quot;, EAST], 
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;4269&quot;]], 
+  PROJECTION[&quot;Transverse_Mercator&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9807&quot;]], 
+  PARAMETER[&quot;central_meridian&quot;, -75.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 0.0], 
+  PARAMETER[&quot;scale_factor&quot;, 0.9996], 
+  PARAMETER[&quot;false_easting&quot;, 500000.0], 
+  PARAMETER[&quot;false_northing&quot;, 0.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;Easting&quot;, EAST], 
+  AXIS[&quot;Northing&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;26918&quot;]]</nativeCRS>
+  <srs>EPSG:26918</srs>
+  <nativeBoundingBox>
+    <minx>407023.40625</minx>
+    <maxx>465265.917116303</maxx>
+    <miny>4649821.732072523</miny>
+    <maxy>4696192.371672511</maxy>
+    <crs class="projected">EPSG:26918</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-76.12998684961792</minx>
+    <maxx>-75.41940175939408</maxx>
+    <miny>41.99492083122716</miny>
+    <maxy>42.4172621581856</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--58401678:1916b76ad33:-7ff5</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

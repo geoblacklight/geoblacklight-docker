@@ -1,0 +1,67 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--58401678:1916b76ad33:-7fee</id>
+  <name>mit-f6rqs4ucovjk2</name>
+  <nativeName>mit-f6rqs4ucovjk2</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--40ad9fd1:1915be3e0ec:-7ffe</id>
+  </namespace>
+  <title>mit-f6rqs4ucovjk2</title>
+  <keywords>
+    <string>mit-f6rqs4ucovjk2</string>
+    <string>features</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;NAD83 / Massachusetts Mainland&quot;, 
+  GEOGCS[&quot;NAD83&quot;, 
+    DATUM[&quot;North American Datum 1983&quot;, 
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY[&quot;EPSG&quot;,&quot;6269&quot;]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Geodetic longitude&quot;, EAST], 
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;4269&quot;]], 
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9802&quot;]], 
+  PARAMETER[&quot;central_meridian&quot;, -71.5], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 41.0], 
+  PARAMETER[&quot;standard_parallel_1&quot;, 42.68333333333334], 
+  PARAMETER[&quot;false_easting&quot;, 200000.0], 
+  PARAMETER[&quot;false_northing&quot;, 750000.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;standard_parallel_2&quot;, 41.71666666666667], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;Easting&quot;, EAST], 
+  AXIS[&quot;Northing&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;26986&quot;]]</nativeCRS>
+  <srs>EPSG:26986</srs>
+  <nativeBoundingBox>
+    <minx>33869.69557142857</minx>
+    <maxx>330839.528</maxx>
+    <miny>777514.5698571429</miny>
+    <maxy>959715.9029999999</maxy>
+    <crs class="projected">EPSG:26986</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-73.53323734131907</minx>
+    <maxx>-69.89856461452996</maxx>
+    <miny>41.23034480152423</miny>
+    <maxy>42.88786641514884</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--58401678:1916b76ad33:-7fef</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

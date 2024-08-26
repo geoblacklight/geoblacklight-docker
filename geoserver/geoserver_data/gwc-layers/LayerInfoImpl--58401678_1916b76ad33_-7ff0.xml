@@ -1,32 +1,32 @@
 <GeoServerTileLayer>
-  <id>LayerInfoImpl--40ad9fd1:1915be3e0ec:-7ffc</id>
+  <id>LayerInfoImpl--58401678:1916b76ad33:-7ff0</id>
   <enabled>true</enabled>
   <inMemoryCached>true</inMemoryCached>
-  <name>gbl:nyu_2451_34564</name>
+  <name>gbl:stanford-cz128vq0535</name>
   <mimeFormats>
     <string>image/png</string>
     <string>image/jpeg</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
-      <gridSetName>EPSG:4326</gridSetName>
+      <gridSetName>EPSG:900913</gridSetName>
       <extent>
         <coords>
-          <double>-74.25004704107901</double>
-          <double>40.49952516399667</double>
-          <double>-73.73170577656607</double>
-          <double>40.89626291438412</double>
+          <double>3292110.5990225733</double>
+          <double>-164623.78002197534</double>
+          <double>3896216.4681820315</double>
+          <double>471764.83479182894</double>
         </coords>
       </extent>
     </gridSubset>
     <gridSubset>
-      <gridSetName>EPSG:900913</gridSetName>
+      <gridSetName>EPSG:4326</gridSetName>
       <extent>
         <coords>
-          <double>-8265477.427989526</double>
-          <double>4938799.662503363</double>
-          <double>-8207775.942366803</double>
-          <double>4997052.487640509</double>
+          <double>29.57353268113851</double>
+          <double>-1.4786764066885594</double>
+          <double>35.000308036061</double>
+          <double>4.234076631097764</double>
         </coords>
       </extent>
     </gridSubset>
@@ -45,7 +45,7 @@
       <key>STYLES</key>
       <defaultValue></defaultValue>
       <availableStyles class="sorted-set"/>
-      <defaultStyle>point</defaultStyle>
+      <defaultStyle>polygon</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

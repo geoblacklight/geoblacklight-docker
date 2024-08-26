@@ -1,0 +1,17 @@
+<layer>
+  <name>G7064_S2_1834_K3</name>
+  <id>LayerInfoImpl--58401678:1916b76ad33:-7ff8</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--58401678:1916b76ad33:-7ff9</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-19 16:46:59.794 UTC</dateCreated>
+  <dateModified>2024-08-26 17:46:42.816 UTC</dateModified>
+</layer>

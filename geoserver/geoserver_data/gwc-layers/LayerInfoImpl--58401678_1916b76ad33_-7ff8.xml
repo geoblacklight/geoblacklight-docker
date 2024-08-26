@@ -1,32 +1,32 @@
 <GeoServerTileLayer>
-  <id>LayerInfoImpl--40ad9fd1:1915be3e0ec:-7ffc</id>
+  <id>LayerInfoImpl--58401678:1916b76ad33:-7ff8</id>
   <enabled>true</enabled>
   <inMemoryCached>true</inMemoryCached>
-  <name>gbl:nyu_2451_34564</name>
+  <name>gbl:G7064_S2_1834_K3</name>
   <mimeFormats>
     <string>image/png</string>
     <string>image/jpeg</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
-      <gridSetName>EPSG:4326</gridSetName>
+      <gridSetName>EPSG:900913</gridSetName>
       <extent>
         <coords>
-          <double>-74.25004704107901</double>
-          <double>40.49952516399667</double>
-          <double>-73.73170577656607</double>
-          <double>40.89626291438412</double>
+          <double>3340797.2449897057</double>
+          <double>8326568.677162886</double>
+          <double>3436780.4666963066</double>
+          <double>8409033.690242853</double>
         </coords>
       </extent>
     </gridSubset>
     <gridSubset>
-      <gridSetName>EPSG:900913</gridSetName>
+      <gridSetName>EPSG:4326</gridSetName>
       <extent>
         <coords>
-          <double>-8265477.427989526</double>
-          <double>4938799.662503363</double>
-          <double>-8207775.942366803</double>
-          <double>4997052.487640509</double>
+          <double>30.01089226318642</double>
+          <double>59.66971876011287</double>
+          <double>30.87312421396714</double>
+          <double>60.04172645547843</double>
         </coords>
       </extent>
     </gridSubset>
@@ -45,7 +45,7 @@
       <key>STYLES</key>
       <defaultValue></defaultValue>
       <availableStyles class="sorted-set"/>
-      <defaultStyle>point</defaultStyle>
+      <defaultStyle>raster</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

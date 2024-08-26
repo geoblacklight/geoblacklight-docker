@@ -1,0 +1,25 @@
+<dataStore>
+  <id>DataStoreInfoImpl--58401678:1916b76ad33:-8000</id>
+  <name>nyu_2451_34502</name>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--40ad9fd1:1915be3e0ec:-7fff</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">GMT</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">https://geoblacklight.org/</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="skipScan">true</entry>
+    <entry key="url">file:data/nyu_2451_34502/nyu_2451_34502.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2024-08-19 16:27:05.395 UTC</dateCreated>
+  <disableOnConnFailure>false</disableOnConnFailure>
+</dataStore>

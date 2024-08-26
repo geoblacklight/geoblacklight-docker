@@ -1,0 +1,17 @@
+<layer>
+  <name>tufts-cambridgegrid100-04</name>
+  <id>LayerInfoImpl-3963d6bf:1915e835b7a:-7ffd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3963d6bf:1915e835b7a:-7ffe</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-17 04:06:25.167 UTC</dateCreated>
+  <dateModified>2024-08-26 17:48:30.902 UTC</dateModified>
+</layer>
