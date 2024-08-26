@@ -25,7 +25,7 @@
   <metaTilingY>4</metaTilingY>
   <gutter>0</gutter>
   <defaultCachingGridSetIds>
-    <string>EPSG:3857</string>
+    <string>WebMercatorQuad</string>
     <string>EPSG:4326</string>
     <string>EPSG:900913</string>
   </defaultCachingGridSetIds>

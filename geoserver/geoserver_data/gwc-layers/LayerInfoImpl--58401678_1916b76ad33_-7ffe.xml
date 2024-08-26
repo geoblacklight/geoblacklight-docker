@@ -30,6 +30,9 @@
         </coords>
       </extent>
     </gridSubset>
+    <gridSubset>
+      <gridSetName>WebMercatorQuad</gridSetName>
+    </gridSubset>
   </gridSubsets>
   <metaWidthHeight>
     <int>4</int>
